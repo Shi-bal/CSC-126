@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-semibold">
+    <div class="fixed inset-0 -z-10 h-full w-full items-center [background:radial-gradient(125%_125%_at_70%_15%,#000_70%,#B1FF17_100%)]"></div>
+    <nav class="py-8 relative">
+        <div class="mx-20 flex justify-between items-center">
+            <div class="items-center flex italic">
+                <h1 class="text-xl tracking-tighter">VENOM</h1>
+                <h1 class="text-4xl font-[600] text-[#B1FF17]">X</h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="flex space-x-12 text-md text-[#]">
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="/" class="">Home</a></li>
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="index.html" class="">Features</a></li>
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="index.html" class="">About</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <a class="flex items-center text-black text-sm bg-[#B1FF17] py-4 px-8 rounded-lg transition-all duration-300 hover:outline-2 hover:bg-transparent hover:text-[#B1FF17]" href=""><i class="mr-2 text-lg ph-bold ph-phone"></i>Contact Us</i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="mx-40 mt-40 mb-30">
+            <div class="grid grid-cols-5">
+                <div class="col-span-2 space-y-2">
+                    <h1 class="sm:text-4xl md:text-6xl xl:text-8xl font-extrabold text-[#B1FF17]">Snake<br><span class="text-white">Identifier</span></h1>
+                    <div class="flex items-center space-x-4">
+                        <h2 class="sm:text-md md:text-lg xl:text-xl font-light text-white">Powered by</h2>
+                        <img class="h-10 w-auto" src="{{ url_for('static', filename='images/YOLOv8 Logo.png') }}" alt="YOLOv8 Logo">
+                    </div>
+                    <div class="flex mt-12">
+                        <a class="flex items-center text-white text-lg outline-2 outline-[#B1FF17] py-2 px-8 rounded-lg hover:bg-[#B1FF17]/15 hover:scale-110 transition-all duration-200" href="/snake_identifier">Try Now<i class="ml-2 text-lg ph-bold ph-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-span-3">
+                    <img class="w-full h-full object-contain" src="{{ url_for('static', filename='images/Snake Identified PS2.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

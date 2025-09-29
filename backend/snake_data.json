@@ -1,0 +1,102 @@
+{
+    "Common_Mock_Viper": {
+        "name": "Common Mock Viper",
+        "scientific_name": "Psammodynastes pulverulentus",
+        "family": "Psammodynastes",
+        "description": "Psammodynastes pulverulentus, the common mock viper, is a species of snake native to Asia. It is a small snake (total length up to 65 cm (26 in), less in males), and it will form defensive coils and strike in a viper-like fashion when threatened, although it is harmless to humans.",
+        "danger": "Non-Venomous",
+        "fangs": "Rear Fangs",
+        "length": "40-60 cm",
+        "rarity": "Common"
+    },
+    "Common_Wolf_Snake": {
+        "name": "Common Wolf Snake",
+        "scientific_name": "Lycodon capucinus",
+        "family": "Colubridae",
+        "description": "The Common Wolf Snake (Lycodon capucinus) is a non-venomous colubrid snake. It's found across Southeast Asia, including the Philippines, and is known for its slender body, brown coloration with pale yellow bands, and relatively small size. They are generally docile and harmless, with a diet consisting of small reptiles and amphibians. ",
+        "danger": "Non-venomous",
+        "fangs": "Rear Fangs",
+        "length": "75 cm",
+        "rarity": "Common"
+    },
+    "Dog_Toothed_Cat_Snake": {
+        "name": "Dog-Toothed Cat Snake",
+        "scientific_name": "Boiga cynodon",
+        "family": "Colubridae",
+        "description": "The dog-toothed cat snake (Boiga cynodon) is a large, mildly venomous snake found in Southeast Asia, particularly in Indonesia, Malaysia, the Philippines, Singapore, and Thailand. It is known for its large head, slender body, dark bands, and cat-like vertical pupils. The snake is also named \"dog-toothed\" for its enlarged teeth, which help it hold onto prey. While they are venomous, they are not considered dangerous to humans, and bites are usually not envenomated unless they chew to inject venom. ",
+        "danger": "Mildly Venomous",
+        "fangs": "Rear Fangs",
+        "length": "5-8 ft",
+        "rarity": "Common"
+    },
+    "Gold_Ringed_Cat_Snake": {
+        "name": "Gold-Ringed Cat Snake",
+        "scientific_name": "Boiga dendrophila",
+        "family": "Colubridae",
+        "description": "Also known as the Yellow-ringed Cat Snake, or Mangrove Snake, this distinctively coloured species is unmistakable. It occurs mainly in mangrove or riverine habitats. By day it lies motionless on overhanging branches, but at night becomes active coming to the ground and feeding on other vertebrates including rodents, small birds and their eggs, frogs, bats and sometimes other snakes. It is also an adept swimmer. This is a venomous, rear-fanged species. Although by day it may appear quite docile it should not be approached too closely as some individuals may be unpredictable in temperament.",
+        "danger": "Mildly Venomous",
+        "fangs": "Rear Fangs",
+        "length": "2.5 meters",
+        "rarity": "Common"
+    },
+    "Oriental_Whipsnake": {
+        "name": "Oriental Whipsnake",
+        "scientific_name": "Ahaetulla prasina",
+        "family": "Colubridae",
+        "description": "The Oriental Whip Snake prefers forest edge habitats or their equivalent including parklands, wooded residential areas and rural agricultural areas. It is most commonly encountered whilst sunning itself on secondary growth along the forest edge.",
+        "danger": "Non-venomous",
+        "fangs": "Rear Fangs",
+        "length": "2 meters",
+        "rarity": "Common"
+    },
+    "Philippine_Cobra": {
+        "name": "Philippine Cobra",
+        "scientific_name": "Naja philippinensis",
+        "family": "Elapidae",
+        "description": "The Philippine cobra (Naja philippinensis) also called Philippine spitting cobra or northern Philippine cobra, is a stocky, highly venomous species of spitting cobra native to the northern regions of the Philippines. The Philippine cobra is called ulupong in Tagalog, carasaen in Ilocano.",
+        "danger": "Highly Venomous",
+        "fangs": "Front Fangs",
+        "length": "3-5 ft",
+        "rarity": "Common"
+    },
+    "Philippine_Pit_Viper": {
+        "name": "Philippine Pit Viper",
+        "scientific_name": "Trimeresurus flavomaculatus",
+        "family": "Viperidae",
+        "description": "The Philippine pit viper (Trimeresurus flavomaculatus) is a highly venomous pit viper species found only in the Philippines. It is one of the most venomous snakes in the world for which there is no antivenom yet.",
+        "danger": "Venomous",
+        "fangs": "Front Fangs",
+        "length": "3 ft",
+        "rarity": "Common"
+    },
+    "Philippines_Bronzeback": {
+        "name": "Philippines Bronzeback",
+        "scientific_name": "Dendrelaphis philippinensis",
+        "family": "Colubridae",
+        "description": "The Philippine Bronzeback (Dendrelaphis philippinensis) is a fast-moving, arboreal snake found in forests and wooded areas throughout the Philippines. It is recognized by its bronze-colored back and slender body.",
+        "danger": "Non-venomous",
+        "fangs": "Rear Fangs",
+        "length": "1-1.5 meters",
+        "rarity": "Uncommon"
+    },
+    "Reticulated_Python": {
+        "name": "Reticulated Python",
+        "scientific_name": "Malayopython reticulatus",
+        "family": "Pythonidae",
+        "description": "The Reticulated Python (Malayopython reticulatus) is the world's longest snake and is native to Southeast Asia, including the Philippines. It is a non-venomous constrictor, known for its beautiful net-like pattern and large size.",
+        "danger": "Non-venomous",
+        "fangs": "No Fangs",
+        "length": "10-20 ft",
+        "rarity": "Common"
+    },
+    "Samar_Cobra": {
+        "name": "Samar Cobra",
+        "scientific_name": "Naja samarensis",
+        "family": "Elapidae",
+        "description": "The Samar Cobra (Naja samarensis) is a highly venomous spitting cobra species found in the Visayas and Mindanao regions of the Philippines. It is known for its potent neurotoxic venom and ability to spit venom as a defense.",
+        "danger": "Venomous",
+        "fangs": "Front Fangs",
+        "length": "1-1.4 meters",
+        "rarity": "Uncommon"
+    }
+}

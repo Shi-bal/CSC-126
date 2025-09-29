@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .dashed-border {
+            width: 800px;
+            height: 400px;
+            /* dashed border */
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='gray' stroke-width='8' stroke-dasharray='20%2c 40' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-semibold">
+    <div class="fixed inset-0 -z-10 h-full w-full items-center [background:radial-gradient(125%_125%_at_50%_15%,#000_60%,#B1FF17_100%)]"></div>
+    <nav class="py-8 relative">
+        <div class="mx-20 flex justify-between items-center">
+            <div class="items-center flex italic">
+                <h1 class="text-xl tracking-tighter">VENOM</h1>
+                <h1 class="text-4xl font-[600] text-[#B1FF17]">X</h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="flex space-x-12 text-md text-[#]">
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="/" class="">Home</a></li>
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="index.html" class="">Features</a></li>
+                    <li class="hover:text-[#B1FF17] transition-all duration-300"><a href="index.html" class="">About</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <a class="flex items-center text-black text-sm bg-[#B1FF17] py-4 px-8 rounded-lg transition-all duration-300 hover:outline-2 hover:bg-transparent hover:text-[#B1FF17]" href=""><i class="mr-2 text-lg ph-bold ph-phone"></i>Contact Us</i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="mx-40 mt-40 mb-30">
+            <div class="grid grid-cols-5">
+                <div class="col-span-2 space-y-2">
+                    <h1 class="sm:text-4xl md:text-6xl xl:text-8xl font-extrabold text-[#B1FF17]">Snake<br><span class="text-white">Identifier</span></h1>
+                    <div class="flex items-center space-x-4">
+                        <h2 class="sm:text-md md:text-lg xl:text-xl font-light text-white">Powered by</h2>
+                        <img class="h-10 w-auto" src="{{ url_for('static', filename='images/YOLOv8 Logo.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-span-3">
+                    <div class="bg-white rounded-2xl overflow-hidden">
+                        <img class="w-full h-100 object-contain rounded-t-2xl" src="{{ url_for('static', filename=image) }}" alt="" >
+                        <div class="bg-white rounded-2xl overflow-hidden p-6 mb-6">
+                            <div class="grid grid-cols-4 justify-between items-start">
+                                <div class="col-span-3">
+                                    <p class="text-sm text-gray-600">{{ info.scientific_name }}</p>
+                                    <h1 class="text-2xl font-extrabold text-black">{{ info.name }}</h1>
+                                </div>
+                                <div class="col-span-1">
+                                    <p class="text-sm text-gray-600">Family</p>
+                                    <h2 class="text-base font-semibold text-black">{{ info.family }}</h2>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-4 text-justify"> {{ info.description | safe }} </p>
+                            <div class="grid grid-cols-4 mt-8">
+                                <div class="col-span-1 flex items-center space-x-4">
+                                    <div class="bg-gray-100 rounded-lg px-2 py-2">
+                                        <i class="ph-fill ph-skull text-rose-500 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-500">Danger</p>
+                                        <p class="text-xs font-bold text-black">{{ info.danger }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-1 flex items-center space-x-4">
+                                    <div class="bg-gray-100 rounded-lg px-2 py-2">
+                                        <i class="ph-bold ph-warning text-yellow-500 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-500">Fangs</p>
+                                        <p class="text-xs font-bold text-black">{{ info.fangs }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-1 flex items-center space-x-4">
+                                    <div class="bg-gray-100 rounded-lg px-2 py-2">
+                                        <i class="ph-bold ph-ruler text-blue-500 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-500">Adult length</p>
+                                        <p class="text-xs font-bold text-black">{{ info.length }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-1 flex items-center space-x-4">
+                                    <div class="bg-gray-100 rounded-lg px-2 py-2">
+                                        <i class="ph-bold ph-star text-green-500 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-gray-500">Rarity</p>
+                                        <p class="text-xs font-bold text-black">{{ info.rarity }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-12 justify-center">
+                                <a class="flex items-center text-black text-sm bg-[#B1FF17] py-4 px-8 rounded-lg transition-all duration-300 hover:scale-110 hover:bg-black hover:text-[#B1FF17]" href="{{ url_for('show_upload_page') }}"><i class="mr-2 text-lg ph-bold ph-upload-simple"></i>Try Again?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    // File upload
+    document.getElementById('file-upload-btn').addEventListener('click', function() {
+        document.getElementById('file-upload').click();
+    });
+</script>
